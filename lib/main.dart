@@ -34,6 +34,20 @@ class NinjaId extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/emma_1.png'),
+                radius: 80.0,
+              ),
+            ),
+            Divider(
+              height: 90.0,
+              thickness: 0.0,
+              indent: 0.0,
+              endIndent: 0.0,
+              color: Colors.grey,
+            ),
+            
               Text('NAME',
                   style: TextStyle(
                     color: Colors.grey,
@@ -63,6 +77,7 @@ class NinjaId extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     letterSpacing: 2.0,
                   )),
+                  SizedBox(height: 30.0,),
             Row(
               children: <Widget>[
                 Icon(
